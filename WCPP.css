@@ -1,0 +1,240 @@
+@font-face { font-family: Harabara; src: url('Harabara.ttf'); }
+
+* {
+	padding:0;
+	margin:0;
+}
+
+.poolRules {
+	background-color:#088A08;
+	border-bottom:5px solid yellow;
+	border-radius:20px;
+	height:70px;
+	width:750px;
+	background-size:700px 100px;
+}
+
+#title {
+	color:White;
+	font-size:3em;
+	font-family:Harabara;
+	text-align:center;
+	font-weight:bold;
+	top:8px;
+	position:relative;
+}
+
+#behind {
+	position:absolute;
+	width:100%;
+	height:1500px;
+	background-image: url('Stadium.JPG');
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius:5px;
+	z-index:1;
+	padding:0;
+}
+
+#main {
+	position:absolute;
+	height:100%;
+	width:850px;
+	background-color:white;
+	z-index:2;
+	padding-left:75px;
+	padding-top:14px;
+}
+
+#logo {
+	background-image: url(http://upload.wikimedia.org/wikipedia/en/thumb/e/e8/WC-2014-Brasil.svg/719px-WC-2014-Brasil.svg.png);
+	background-size:80%;
+	height:400px;
+	width:300px;
+	position:fixed;
+	left:1020px;
+	top:20px;
+	z-index:3;
+	position:fixed;
+	background-repeat:no-repeat;
+}
+
+.field1 {
+	background-image: url("SoccerField.jpg");
+	width:500px;
+	height:600px;
+	background-size:100% 100%;
+	font-family:Impact;
+	color:White;
+	font-size:1.1em;
+	position:relative;
+	left:150px;
+	top:10px;
+}
+
+
+span {
+	font-weight:bold;
+}
+
+img{
+	height:40px;
+	width:40px;
+}
+
+a:link {
+	text-decoration:none;
+	color:#848484;
+}
+
+a:visited {
+	color:#848484;
+}
+
+a:hover {
+	color:#A4A4A4;
+}
+
+.Name {
+	height:70px;
+	width:500px;
+	}
+	
+.Name1 {
+	margin:auto;
+	position:relative;
+	left:20px;
+	top:20px;
+	color:#D8D8D8;
+	height:70px;
+	width:300px;
+}
+
+.FW {
+	top:40px;
+	height:100px;
+	width:250px;
+	margin:auto;
+	position:relative;
+}
+
+.LS {
+	float:left;
+}
+
+.RS {
+	float:right;
+}
+
+.MD {
+	position:relative;
+	top:70px;
+	height:100px;
+	width:500px;
+}
+
+.LM {
+	float:left;
+	height:100px;
+	width:225px;
+}
+
+.RM {
+	float:right;
+	height:100px;
+	width:225px;
+}
+
+.RW {
+	float:right;
+	position:relative;
+	right:20px;
+	bottom:10px;
+}
+
+.RCM {
+	float:left;
+	position:relative;
+	top:25px;
+	
+}
+
+.LW {
+	float:left;
+	position:relative;
+	left:20px;
+	bottom:10px;
+}
+
+.LCM {
+	float:right;
+	position:relative;
+	top:25px;
+	right:20px;
+}
+
+
+.DF {
+	position:relative;
+	top:100px;
+	height:100px;
+	width:500px;
+}
+
+.LD {
+	height:100px;
+	width:210px;
+	float:left;
+}
+
+.LB {
+	float:left;
+	position:relative;
+	left:15px;
+}
+
+.LCB {
+	float:right;
+	top:25px;
+	position:relative;
+}
+
+.RD {
+	height:100px;
+	width:210px;
+	float:right;
+}
+
+.RB {	
+	float:right;
+	position:relative;
+	right:15px;
+}
+
+.RCB {
+	float:left;
+	position:relative;
+	top:25px;
+}
+
+.GK {
+	position:relative;
+	top:140px;
+	width:500px;
+	height:60px;
+}
+
+.GK p {
+	position:relative;
+	left:225px;
+}
+
+#body {
+	line-height:150%;
+	font-family:Century Gothic;
+	font-size:20px;
+}
+
+
+
