@@ -1,14 +1,14 @@
 var pRonaldo = 30;
 
-function update() {
+/*function update() {
 	var a = document.getElementById('pRonaldo');
 	a.innerHTML = pRonaldo;
-}
+}*/
 
 $(document).ready( function() {
 	$('table').tablesorter();
 	/*$('table td').eq(3).html('200');*/
-	update();
+	/*update();*/
 	}
 );
 
