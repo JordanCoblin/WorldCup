@@ -25,9 +25,9 @@
 }
 
 #behind {
-	position:fixed;
+	position:absolute;
 	width:100%;
-	height:100%;
+	height:1516px;
 	background-image: url('Stadium.JPG');
 	background-position: right top;
 	background-repeat: no-repeat;
