@@ -55,7 +55,7 @@
 	background-repeat:no-repeat;
 }
 
-/* Start the Player Rankings styling */
+/*Start the Player Rankings styling */
 
 #playerRankings{
 	font-size: 1.2em;
@@ -83,164 +83,16 @@
 #playerRankings tr:nth-child(even) {
 	background-color:#E6F8E0;
 }
-	
-/* Start the field styling */
 
-.field1 {
-	background-image: url("SoccerField.jpg");
-	width:500px;
-	height:600px;
-	background-size:100% 100%;
-	font-family:Impact;
-	color:White;
-	font-size:1.2em;
-	position:relative;
+/* CSS for SlideShow */
 
+
+
+img {
+	width:400px;
+	height:500px;;
 }
 
-.Name {
-	height:70px;
-	width:500px;
-	}
-	
-.Name1 {
-	margin:auto;
-	position:relative;
-	left:100px;
-	top:20px;
-	color:#D8D8D8;
-	height:70px;
-	width:300px;
-}
-
-.FW {
-	top:40px;
-	height:100px;
-	width:250px;
-	margin:auto;
-	position:relative;
-}
-
-.LS {
-	float:left;
-}
-
-.RS {
-	float:right;
-}
-
-.MD {
-	position:relative;
-	top:70px;
-	height:100px;
-	width:500px;
-}
-
-.LM {
-	float:left;
-	height:100px;
-	width:225px;
-}
-
-.RM {
-	float:right;
-	height:100px;
-	width:225px;
-}
-
-.RW {
-	float:right;
-	position:relative;
-	right:20px;
-	bottom:10px;
-}
-
-.RCM {
-	float:left;
-	position:relative;
-	top:25px;
-	
-}
-
-.LW {
-	float:left;
-	position:relative;
-	left:20px;
-	bottom:10px;
-}
-
-.LCM {
-	float:right;
-	position:relative;
-	top:25px;
-	right:20px;
-}
-
-
-.DF {
-	position:relative;
-	top:100px;
-	height:100px;
-	width:500px;
-}
-
-.LD {
-	height:100px;
-	width:210px;
-	float:left;
-}
-
-.LB {
-	float:left;
-	position:relative;
-	left:15px;
-}
-
-.LCB {
-	float:right;
-	top:25px;
-	position:relative;
-}
-
-.RD {
-	height:100px;
-	width:210px;
-	float:right;
-}
-
-.RB {	
-	float:right;
-	position:relative;
-	right:15px;
-}
-
-.RCB {
-	float:left;
-	position:relative;
-	top:25px;
-}
-
-.GK {
-	position:relative;
-	top:140px;
-	width:500px;
-	height:60px;
-}
-
-.GK p {
-	position:relative;
-	left:225px;
-}
-
-/*
-span {
-	font-weight:bold;
-}
-
-img{
-	height:40px;
-	width:40px;
-}
 
 a:link {
 	text-decoration:none;
@@ -254,6 +106,10 @@ a:visited {
 a:hover {
 	color:#A4A4A4;
 }
-*/
+
+span {
+	font-weight:bold;
+	font-family:Century Gothic;
+}
 
 /* jShowOff styling */

@@ -3,6 +3,7 @@
 	<head>
 		<title> World Cup Pool </title>
 		<link type="text/css" rel="stylesheet" href="WCP.css" />
+		<script type='text/javascript' src="jquery1.js"></script>
 	</head>
 	
 
@@ -29,13 +30,134 @@
 				<br>
 				<div id="links">
 					<p>
-						<a href="http://worldcuppool.net46.net/WorldCupPlayerPage.html"> Rules </a>
+						<a href="http://worldcuppool.net46.net/PlayerPicks.html"> Player Picks and Stats </a>
+						<br> <a href="http://worldcuppool.net46.net/WorldCupPlayerPage.html"> Rules </a>
 						<br><a href="http://resources.fifa.com/mm/document/tournament/competition/02/33/99/65/fifaworldcup2014-releaselist_neutral.pdf"> List of Players/Positions </a>
 						<br><a href="http://www.futhead.com/14/"> Player Ratings </a>
 						<br> <br>
 					</p>
 				</div>
 		
+		<!-- Begin Slideshow -->
+
+				<div id="slideshow">
+					<div id="slideshowWindow">
+					
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Shonah.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Darnel.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Margit.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Nishi.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Pat.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Tee Oh.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Connor.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Alex.jpg" />
+							</div><!--/slide-->
+							
+							<div class="slide">
+									<img style="height:100; width:100%" src="TeamPicks\Jordan.jpg" />
+							</div><!--/slide-->
+							
+					</div><!--/slideshowWindow-->
+				</div><!--/slideshow-->
+		
+				
+				<script type="text/javascript">
+							$(document).ready(function() {
+													 
+							var currentPosition = 0;
+							var slideWidth = 400;
+							var slides = $('.slide');
+							var numberOfSlides = slides.length;
+							var slideShowInterval;
+							var speed = 5800;
+
+							//Assign a timer, so it will run periodically
+							slideShowInterval = setInterval(changePosition, speed);
+							
+							slides.wrapAll('<div id="slidesHolder"></div>')
+							
+							slides.css({ 'float' : 'left' });
+							
+							//set #slidesHolder width equal to the total width of all the slides
+							$('#slidesHolder').css('width', slideWidth * numberOfSlides);
+							
+							$('#slideshow')
+								.prepend('<span class="nav" id="leftNav">Move Left</span>')
+								.append('<span class="nav" id="rightNav">Move Right</span>');
+							
+							manageNav(currentPosition);
+							
+							//tell the buttons what to do when clicked
+							$('.nav').bind('click', function() {
+								
+								//determine new position
+								currentPosition = ($(this).attr('id')=='rightNav')
+								? currentPosition+1 : currentPosition-1;
+															
+								//hide/show controls
+								manageNav(currentPosition);
+								clearInterval(slideShowInterval);
+								slideShowInterval = setInterval(changePosition, speed);
+								moveSlide();
+							});
+							
+							function manageNav(position) {
+								//hide left arrow if position is first slide
+								if(position==0){ $('#leftNav').hide() }
+								else { $('#leftNav').show() }
+								//hide right arrow is slide position is last slide
+								if(position==numberOfSlides-1){ $('#rightNav').hide() }
+								else { $('#rightNav').show() }
+							}
+
+							
+							/*changePosition: this is called when the slide is moved by the 
+									timer and NOT when the next or previous buttons are clicked*/
+							function changePosition() {
+								if(currentPosition == numberOfSlides - 1) {
+									currentPosition = 0;
+									manageNav(currentPosition);
+								} else {
+									currentPosition++;
+									manageNav(currentPosition);
+								}
+								moveSlide();
+							}
+							
+							
+							//moveSlide: this function moves the slide 
+							function moveSlide() {
+									$('#slidesHolder')
+														.animate({'marginLeft' : slideWidth*(-currentPosition)});
+							}
+
+						});
+				</script>
+				<br>
+				<br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <!-- Beginning of all Group tables -->
 				<div id="table">
