@@ -1,9 +1,13 @@
 @font-face { font-family: Harabara; src: url('Harabara.ttf'); }
+* {
+	margin:0;
+	padding:0;
+}
 
 #behind {
-	position:fixed;
+	position:absolute;
 	width:100%;
-	height:100%;
+	height:3500px;
 	background-image: url('Stadium.JPG');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -54,6 +58,36 @@
 	position:fixed;
 	background-repeat:no-repeat;
 }
+/*Start the Rankings styling*/
+
+#Rankings {
+	font-size:1.2em;
+	font-family: Century Gothic;
+	text-align: center;
+	border-collapse: collapse;
+	position: relative;
+	left:45px;
+	width:70%;
+}
+
+#Rankings th {
+	background-color:#CEE3F6;
+	padding:15px;
+	font-family:Harabara;
+}
+
+#Rankings tr td:nth-child(1) {
+	padding: 5px;
+}
+
+#Rankings tr:nth-child(even) td:nth-child(1){
+	background-color:#CEE3F6; 
+}
+
+#Rankings tr:nth-child(even) {
+	background-color:#E0ECF8;
+}
+
 
 /*Start the Player Rankings styling */
 
