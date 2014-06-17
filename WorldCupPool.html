@@ -4,6 +4,7 @@
 		<title> World Cup Pool </title>
 		<link type="text/css" rel="stylesheet" href="WCP.css" />
 		<script type='text/javascript' src="jquery1.js"></script>
+		<script type='text/javascript' src="slide.js"></script>
 	</head>
 	
 
@@ -81,80 +82,11 @@
 							
 					</div><!--/slideshowWindow-->
 				</div><!--/slideshow-->
-		
 				
-				<script type="text/javascript">
-							$(document).ready(function() {
-													 
-							var currentPosition = 0;
-							var slideWidth = 400;
-							var slides = $('.slide');
-							var numberOfSlides = slides.length;
-							var slideShowInterval;
-							var speed = 5800;
-
-							//Assign a timer, so it will run periodically
-							slideShowInterval = setInterval(changePosition, speed);
-							
-							slides.wrapAll('<div id="slidesHolder"></div>')
-							
-							slides.css({ 'float' : 'left' });
-							
-							//set #slidesHolder width equal to the total width of all the slides
-							$('#slidesHolder').css('width', slideWidth * numberOfSlides);
-							
-							$('#slideshow')
-								.prepend('<span class="nav" id="leftNav">Move Left</span>')
-								.append('<span class="nav" id="rightNav">Move Right</span>');
-							
-							manageNav(currentPosition);
-							
-							//tell the buttons what to do when clicked
-							$('.nav').bind('click', function() {
-								
-								//determine new position
-								currentPosition = ($(this).attr('id')=='rightNav')
-								? currentPosition+1 : currentPosition-1;
-															
-								//hide/show controls
-								manageNav(currentPosition);
-								clearInterval(slideShowInterval);
-								slideShowInterval = setInterval(changePosition, speed);
-								moveSlide();
-							});
-							
-							function manageNav(position) {
-								//hide left arrow if position is first slide
-								if(position==0){ $('#leftNav').hide() }
-								else { $('#leftNav').show() }
-								//hide right arrow is slide position is last slide
-								if(position==numberOfSlides-1){ $('#rightNav').hide() }
-								else { $('#rightNav').show() }
-							}
-
-							
-							/*changePosition: this is called when the slide is moved by the 
-									timer and NOT when the next or previous buttons are clicked*/
-							function changePosition() {
-								if(currentPosition == numberOfSlides - 1) {
-									currentPosition = 0;
-									manageNav(currentPosition);
-								} else {
-									currentPosition++;
-									manageNav(currentPosition);
-								}
-								moveSlide();
-							}
-							
-							
-							//moveSlide: this function moves the slide 
-							function moveSlide() {
-									$('#slidesHolder')
-														.animate({'marginLeft' : slideWidth*(-currentPosition)});
-							}
-
-						});
-				</script>
+				<div id="buttons" style="margin-top:450px">
+					<button type="button" id="previous" onClick="previousSlide();"> Previous </button>
+					<button type="button" id="next" onClick="nextSlide()"> Next </button>
+				</div>
 				<br>
 				<br>
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

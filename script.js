@@ -9,7 +9,7 @@ $(document).ready( function() {
 	var Ronaldo = 0; $('#pRonaldo').html(Ronaldo);
 	var Messi = 2; $('#pMessi').html(Messi);
 	var Casillas = 0; $('#pCasillas').html(Casillas);
-	var Neuer = 0; $('#pNeuer').html(Neuer);
+	var Neuer = 2; $('#pNeuer').html(Neuer);
 	var Kompany = 0; $('#pKompany').html(Kompany);
 	var Varane = 1; $('#pVarane').html(Varane);
 	var Ramos = 0; $('#pRamos').html(Ramos);
@@ -24,9 +24,9 @@ $(document).ready( function() {
 	var DeBruyne = 0; $('#pDeBruyne').html(DeBruyne);
 	var DiMaria = 0; $('#pDiMaria').html(DiMaria);
 	var DSilva = 0; $('#pDSilva').html(DSilva);
-	var Hummels = 0; $('#pHummels').html(Hummels);
+	var Hummels = 4; $('#pHummels').html(Hummels);
 	var Luiz = 0; $('#pLuiz').html(Luiz);
-	var Mertesacker = 0; $('#pMertesacker').html(Mertesacker);
+	var Mertesacker = 1; $('#pMertesacker').html(Mertesacker);
 	var Toure = 0; $('#pToure').html(Toure);
 	var Pirlo = 0; $('#pPirlo').html(Pirlo);
 	var Fabregas = 0; $('#pFabregas').html(Fabregas);
@@ -36,7 +36,7 @@ $(document).ready( function() {
 	var Evra = 1; $('#pEvra').html(Evra);
 	var Villa = 0; $('#pVilla').html(Villa);
 	var Lahm = 0; $('#pLahm').html(Lahm);
-	var Muller = 0; $('#pMuller').html(Muller);
+	var Muller = 6; $('#pMuller').html(Muller);
 	var Benzema = 4; $('#pBenzema').html(Benzema);
 	
 	
