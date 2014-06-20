@@ -42,5 +42,9 @@ $(document).ready( function() {
 		$('#slidesHolder').animate( {'marginLeft' : (-curPosition) * width} );
 		isVisible();
 	}
-					
+	
+	/*Here are the tablesorter items, had to wrap every tables first tr with thead, and the rest with tbody*/
+
+	
+	$('table').tablesorter();
 });

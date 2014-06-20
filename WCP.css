@@ -152,28 +152,32 @@ a:hover {
 
 #buttons {
 	position:absolute;
-	margin-left:350px;
+	margin-left:343px;
 }
-/*
-.nav {
-	display:block;
-	text-indent:-10000px;
+
+#previous {
 	position:absolute;
+	display:none;
+	border:none;
+	width:35px;
+	height:35px;
+	background-image:url(previous.png);
+	background-color:white;
+	background-size:100%;
+	z-index:999;
+	cursor:hand;
+}
+
+#next {
+	margin-left:40px;
+	position:absolute;
+	display:none;
+	border:none;
+	width:35px;
+	height:35px;
+	background-image:url(next.png);
+	background-color:white;
+	background-size:100%;
+	z-index:999;
 	cursor:pointer;
 }
-
-#leftNav {
-	top:223px;
-	left:780px;
-	width:94px;
-	height:34px;
-	z-index:999;
-}
-
-#rightNav {
-	top:225px;
-	left:910px;
-	width:53px;
-	height:26px;
-	z-index:999;
-} */
