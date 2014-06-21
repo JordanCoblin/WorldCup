@@ -12,7 +12,7 @@ html, body {
 #behind {
 	position:absolute;
 	width:100%;
-	height:2910px;
+	height:2961px;
 	background-image: url('Stadium.JPG');
 	background-position: right top;
 	background-repeat: no-repeat;
@@ -90,6 +90,15 @@ html, body {
 	bottom:2px;
 }
 
+#newsBody {
+	margin-top: 40px;
+	margin-left:20px;
+	line-height: 5px;
+}	
+
+#table {
+	margin-top:380px;
+}
 
 table {
 	font-size: 1.4em;
@@ -130,6 +139,7 @@ a:hover {
 	position:relative;
 	float:left;
 	overflow:hidden;
+	margin-left:180px;
 }
 
 #slideshow #slideshowWindow .slide {
@@ -139,26 +149,35 @@ a:hover {
 	height:500px;
 	position:relative;
 }
-/*
-.nav {
-	display:block;
-	text-indent:-10000px;
+
+#buttons {
 	position:absolute;
+	margin-left:343px;
+}
+
+#previous {
+	position:absolute;
+	display:none;
+	border:none;
+	width:35px;
+	height:35px;
+	background-image:url(previous.png);
+	background-color:white;
+	background-size:100%;
+	z-index:999;
 	cursor:pointer;
 }
 
-#leftNav {
-	top:223px;
-	left:780px;
-	width:94px;
-	height:34px;
+#next {
+	margin-left:40px;
+	position:absolute;
+	display:none;
+	border:none;
+	width:35px;
+	height:35px;
+	background-image:url(next.png);
+	background-color:white;
+	background-size:100%;
 	z-index:999;
+	cursor:pointer;
 }
-
-#rightNav {
-	top:225px;
-	left:910px;
-	width:53px;
-	height:26px;
-	z-index:999;
-} */

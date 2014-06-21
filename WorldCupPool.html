@@ -4,6 +4,7 @@
 		<title> World Cup Pool </title>
 		<link type="text/css" rel="stylesheet" href="WCP.css" />
 		<script type='text/javascript' src="jquery1.js"></script>
+		<script type='text/javascript' src="jquery.tablesorter.js"></script>
 		<script type='text/javascript' src="slide.js"></script>
 	</head>
 	
@@ -17,6 +18,10 @@
 			<div id="news">
 				<div id="newsTitle">
 					<p> News </p>
+				</div>
+				<div id="newsBody">
+					<p  style="font-size:1.1em"> Spain and England knocked out! </p><br><br><br><br>
+					<p style="font-size:1.1em">And Costa Rica through in the group of death... :O  </p>
 				</div>
 			</div>
 		</div>
@@ -84,365 +89,366 @@
 				</div><!--/slideshow-->
 				
 				<div id="buttons" style="margin-top:450px">
-					<button type="button" id="previous" onClick="previousSlide();"> Previous </button>
-					<button type="button" id="next" onClick="nextSlide()"> Next </button>
+					<input type="button" id="previous"  />
+					<input type="button" id="next"  />
 				</div>
 				<br>
 				<br>
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br>
 
 <!-- Beginning of all Group tables -->
 				<div id="table">
+					<p style="font-size:1em"> * Click on column header to sort </P> <br>
 					<h2 class="group">Group A</h2>
 					<table>
-							<tr>
-								<th> Team</th>
-								<th>GP</th>
-								<th>Wins</th>
-								<th>Draws</th>
-								<th>Losses</th>
-								<th>Points</th>
-						</tr>
-						<tr>
+						<thead><tr>
+							<th> Team</th>
+							<th>GP</th>
+							<th>Wins</th>
+							<th>Draws</th>
+							<th>Losses</th>
+							<th>Points</th>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/bra.png" /> Brazil</td>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>4</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/cro.png" /> Croatia</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/mex.png" /> Mexico</td>
+							<td>2</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>4</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/cmr.png" /> Cameroon</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
+							<td>2</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+						</tr></tbody>
 					</table>
 					<br> <br>
 					<h2 class="group">Group B</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/esp.png" /> Spain</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/ned.png" /> Netherlands</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>6</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/chi.png" /> Chile</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>6</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/aus.png" /> Australia</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
+							<td>2</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group C</h2>
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/col.png" /> Colombia</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>6</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/gre.png" /> Greece</td>
+							<td>2</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/civ.png" /> Cote D'Ivoire</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/jpn.png" /> Japan</td>
+							<td>2</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+							<td>1</td>
+							<td>1</td>
+							<td>1</td>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group D</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/uru.png" /> Uruguay</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/crc.png" /> Costa Rica</td>
+							<td>2</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>6</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/eng.png" /> England</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>2</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/ita.png" /> Italy</td>
+							<td>2</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+							<td>1</td>
+							<td>3</td>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group E</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/sui.png" /> Switzerland</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/ecu.png" /> Ecuador</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/fra.png" /> France</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/hon.png" /> Honduras</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group F</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/arg.png" /> Argentina</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/bih.png" /> Bosnia</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/irn.png" /> Iran</td>
+							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/nga.png" /> Nigeria</td>
+							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+							<td>1</td>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group G</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/ger.png" /> Germany</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/por.png" /> Portugal</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/gha.png" /> Ghana</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/usa.png" /> USA</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+							<td>3</td>
+						</tr></tbody>
 					</table>
 					<br><br>
 					<h2 class="group">Group H</h2> 
 					<table>
-						<tr>
+						<thead><tr>
 							<th> Team</th>
 							<th>GP</th>
 							<th>Wins</th>
 							<th>Draws</th>
 							<th>Losses</th>
 							<th>Points</th>
-						</tr>
-						<tr>
+						</tr></thead>
+						<tbody><tr>
 							<td><img src="http://img.fifa.com/images/flags/2/bel.png" /> Belgium</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
+							<td>3</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/alg.png" /> Algeria</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 						<tr>
 							<td><img src="http://img.fifa.com/images/flags/2/rus.png" /> Russia</td>
+							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
+							<td>1</td>
 						</tr>
 						<tr>
-							<td><img src="http://img.fifa.com/images/flags/2/kor.png" /> Korea Republic</td>
+							<td><img src="http://img.fifa.com/images/flags/2/kor.png" /> Korea</td>
+							<td>1</td>
 							<td>0</td>
+							<td>1</td>
 							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-							<td>0</td>
-						</tr>
+							<td>1</td>
+						</tr></tbody>
 					</table>
 				</div>
 				<br><br>
