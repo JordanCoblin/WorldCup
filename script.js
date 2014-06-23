@@ -6,11 +6,11 @@ $(document).ready( function() {
 	var Cesar = 2;$('#pCesar').html(Cesar);
 	var Balotelli = 2; $('#pBalotelli').html(Balotelli);
 	var Marchisio = 2; $('#pMarchisio').html(Marchisio);
-	var Ronaldo = 0; $('#pRonaldo').html(Ronaldo);
-	var Messi = 2; $('#pMessi').html(Messi);
+	var Ronaldo = 1; $('#pRonaldo').html(Ronaldo);
+	var Messi = 4; $('#pMessi').html(Messi);
 	var Casillas = 0; $('#pCasillas').html(Casillas);
 	var Neuer = 2; $('#pNeuer').html(Neuer);
-	var Kompany = 0; $('#pKompany').html(Kompany);
+	var Kompany = 1; $('#pKompany').html(Kompany);
 	var Varane = 1; $('#pVarane').html(Varane);
 	var Ramos = 0; $('#pRamos').html(Ramos);
 	var Pique = 0; $('#pPique').html(Pique);
@@ -36,8 +36,8 @@ $(document).ready( function() {
 	var Evra = 1; $('#pEvra').html(Evra);
 	var Villa = 0; $('#pVilla').html(Villa);
 	var Lahm = 0; $('#pLahm').html(Lahm);
-	var Muller = 6; $('#pMuller').html(Muller);
-	var Benzema = 4; $('#pBenzema').html(Benzema);
+	var Muller = 7; $('#pMuller').html(Muller);
+	var Benzema = 8; $('#pBenzema').html(Benzema);
 	
 	
 	var Pat = Neymar + Messi + DiMaria + Ozil + Oscar + DSilva +
